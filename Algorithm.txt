@@ -1,0 +1,26 @@
+1.Create the paddle
+	a.apply physics to it
+	b.Don't allow it go out of the stage
+2.Create the ball
+	a.apply physics to it (give a bounce)
+	b.Don't allow it go out of the stage (exception - it should be able to go down)
+3.Create the bricks group
+	a.apply physics to it
+	b.create all the bricks using this group
+4.Handle the input
+	a.when player touches on the screen either shoot the ball or move the paddle
+	b.if the player touches on right side of stage move paddle toward right side
+	  else move it towards left side
+	c.when player stops touching the screen stop the paddle from moving
+5.Handle BallLost condition
+	a.If ball goes down the stage reduce the lives remaining & display the lives
+	b.bring the ball back on the paddle
+	c.restart the game if life remaining becomes 0
+6.Handle Collision
+	a.Handle ball-paddle collision
+	b.Handle ball-brick collision
+	c.If ball is on the paddle then don't check for collisions instead just set
+	  the coordinates of the ball so its on top of the paddle
+
+https://drive.google.com/file/d/0B6muDelteblGRl9tMUt5Vm9fVXM/view?usp=sharing
+https://docs.google.com/uc?export=download&id=0B6muDelteblGRl9tMUt5Vm9fVXM
